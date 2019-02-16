@@ -223,11 +223,11 @@ To build, change to a directory where this file is located, and run `make`. The 
 * Test suite: run `make test-release` to run tests in addition to building. Running `make test-debug` will do the same to the debug version.
 * Building with Clang: it may be possible to use Clang instead of GCC, but this may not work everywhere. To build, run `export CC=clang CXX=clang++` before running `make`.
 
-### On Linux
+### On Linux: Ubuntu 16.04.4 LTS
+* sudo apt-get update
 * sudo apt-get install cmake
 * sudo apt-get install libboost-all-dev
 * sudo apt-get install build-essential 
-
 * sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 * sudo apt-get update
 * sudo apt-get install gcc-7 g++-7

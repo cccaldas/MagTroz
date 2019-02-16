@@ -234,6 +234,22 @@ To build, change to a directory where this file is located, and run `make`. The 
 * gcc-7 --version
 * sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 70 --slave /usr/bin/g++ g++ /usr/bin/g++-7
 
+.bash_profile
+export LC_ALL=C.UTF-8
+
+### Daemon
+
+/etc/systemd/system/magtroz.service
+
+sudo systemctl daemon-reload
+sudo systemctl enable magtroz.service
+sudo systemctl start magtroz.service
+sudo systemctl status magtroz.service
+sudo systemctl stop magtroz.service
+sudo systemctl disable magtroz.service
+sudo systemctl restart magtroz.service
+sudo systemctl status magtroz.service
+
 ### On Windows
 Dependencies: MSVC 2013 or later, CMake 2.8.6 or later, and Boost 1.55. You may download them from:
 

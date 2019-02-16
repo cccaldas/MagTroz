@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /root/apps/magtroz
+cd /root/apps/magtroz/bin
 ./magtroz

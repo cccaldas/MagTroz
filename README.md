@@ -240,6 +240,7 @@ export LC_ALL=C.UTF-8
 ### Daemon
 
 /etc/systemd/system/magtroz.service
+mv magtroz.service /etc/systemd/system
 
 sudo systemctl daemon-reload
 sudo systemctl enable magtroz.service
